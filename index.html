@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech with Voice Cloning</title>
+</head>
+<body>
+    <h1>Text-to-Speech with Voice Cloning</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="input_file">Upload PDF or Image:</label>
+        <input type="file" name="input_file" id="input_file" accept=".pdf,.png,.jpg" required>
+        <br><br>
+        <label for="reference_audio">Upload Reference Audio:</label>
+        <input type="file" name="reference_audio" id="reference_audio" accept=".wav" required>
+        <br><br>
+        <button type="submit">Generate Speech</button>
+    </form>
+</body>
+</html>
